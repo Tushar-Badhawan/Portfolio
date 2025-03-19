@@ -1,0 +1,148 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body and Page Layout */
+body {
+    background-color: #121212;
+    color: #fff;
+    padding-top: 70px; /* Adjust padding for header */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top for better viewing */
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent by default */
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Visible on hover */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; /* Align the items to the left */
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: orange;
+    background-color: rgba(255, 165, 0, 0.2); /* Light orange background on hover */
+    padding: 5px 10px; /* Adds padding for the hover effect */
+}
+
+/* Centered Movie Review Section */
+.movie-review-container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 50px; /* Adds spacing below the navbar */
+}
+
+/* Movie Review Box */
+.movie-review {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Movie Title and Cast */
+.movie-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #3498db; /* Blue color */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.movie-title p {
+    font-size: 1.2rem;
+    color: #f39c12; /* Yellow color */
+}
+
+/* Video Section */
+.video-wrapper iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+/* Review Text */
+.review-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #f39c12; /* Yellow color */
+}
+
+.review-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px; /* Adjust for small screens */
+    }
+
+    .movie-review-container {
+        padding: 10px;
+    }
+
+    .movie-title h1 {
+        font-size: 2rem;
+    }
+
+    .video-wrapper iframe {
+        height: 350px;
+    }
+
+    .review-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .review-text p {
+        font-size: 1rem;
+    }
+}

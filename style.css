@@ -1,0 +1,209 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent by default */
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Visible on hover */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; /* Align the items to the left */
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Landing Page */
+.landing {
+    height: 100vh; /* Keeps the height as you wanted */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 100px;
+    margin: auto;
+    text-align: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px; /* Adds space to move the content down */
+}
+
+.photo-placeholder {
+    .photo-placeholder {
+        background-image: url('Me.png');
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; 
+      }
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+h1 span {
+    color: orange;
+    font-size: 2.5rem;
+}
+
+.intro-text {
+    margin-top: 15px;
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: lightgrey;
+    text-align: justify;
+}
+
+/* Container Section */
+.container {
+    min-height: 500px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 100px; /* Space between containers */
+    margin-top: 100px; /* Add space from the top */
+    background-color: rgba(20, 20, 20, 0.9);
+    border-radius: 15px;
+    padding: 40px;
+  
+    /* Criss Cross Background */
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+    background-size: 40px 40px;
+  
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .container.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Button with Right Arrow */
+button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+button::after {
+    content: '→';
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+button:hover::after {
+    margin-left: 8px;
+}
+
+/* Highlighted Text on Hover */
+.highlight:hover {
+    color: orange;
+    transition: 0.3s ease;
+}
+
+/* Smooth Scrolling Fix */
+section {
+    scroll-margin-top: 120px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    h1 span {
+        font-size: 2rem;
+    }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    color: lightgrey;
+    font-size: 1rem;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

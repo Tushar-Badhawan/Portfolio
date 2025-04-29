@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta name="description" content="Portfolio of Tushar Badhawan | Showcasing my profile, movie reviews, and learning journey.">
-  <meta name="author" content="Tushar Badhawan">
-  <meta name="keywords" content="Portfolio, Web Development, Learning, Movie Reviews, Projects">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Portfolio of Tushar Badhawan | Showcasing my profile, movie reviews, and learning journey." />
+  <meta name="author" content="Tushar Badhawan" />
+  <meta name="keywords" content="Portfolio, Web Development, Learning, Movie Reviews, Projects" />
   <title>Tushar Badhawan | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="main-content">
-
     <!-- Navbar -->
     <nav>
       <ul>
@@ -26,9 +26,9 @@
     <!-- Landing Page -->
     <section class="landing">
       <div class="photo-placeholder">
-        <img src="Me.png" alt="Tushar Badhawan's Photo">
+        <img src="Me.png" alt="Tushar Badhawan's Photo" />
       </div>
-      <h1>Hey, I am <br><span>Tushar Badhawan</span></h1>
+      <h1>Hey, I am <br /><span>Tushar Badhawan</span></h1>
       <p class="intro-text">A passionate Computer Science engineer focused on learning, gaining skills, and developing
         solutions, driven by curiosity and the joy of learning new technology. Here's more about me. ↓</p>
     </section>
@@ -37,30 +37,51 @@
     <section class="container" id="profile">
       <h2>Curious to know more about me?</h2>
       <p class="highlight">Check out my profile sheet for insights into my skills and projects.</p>
-      <button onclick="location.href='profile.html'">Profile </button>
+      <button onclick="location.href='profile.html'">Profile</button>
     </section>
 
     <!-- Movie Review Section -->
     <section class="container" id="movie">
-      <h2>Movie Review Recording</h2>
-      <p class="highlight">Check out my movie review recording to dive into my analysis and thoughts on the film.</p>
-      <button onclick="location.href='movie.html'">My Review </button>
+      <h2>Movie Review</h2>
+      <p class="highlight">Check out my movie review to dive into my analysis and thoughts on the film.</p>
+      <button onclick="location.href='movie.html'">My Review</button>
     </section>
 
     <!-- Learning Section -->
     <section class="container" id="learning">
       <h2>My Learning Journey</h2>
       <p class="highlight">My learnings from the lectures have helped and guided me in developing essential soft skills.</p>
-      <button onclick="location.href='learning.html'">Learnings </button>
+      <button onclick="location.href='learning.html'">Learnings</button>
+    </section>
+
+    <!-- Connect Section -->
+    <section class="container" id="connect">
+      <h2>Connect with Me</h2>
+      <div class="connect-grid">
+        <div class="connect-card">
+          <h3>Check Out My Projects</h3>
+          <p>Visit my GitHub to see what I've been working on!</p>
+          <a href="https://github.com/Tushar-Badhawan" target="_blank">
+            <button><i class="fab fa-github"></i> GitHub</button>
+          </a>
+        </div>
+        <div class="connect-card">
+          <h3>Let's Connect</h3>
+          <p>Visit my LinkedIn Profile and connect with me?</p>
+          <a href="https://www.linkedin.com/in/tushar-badhawan-6a1b01311" target="_blank">
+            <button><i class="fab fa-linkedin"></i> LinkedIn</button>
+          </a>
+        </div>
+      </div>
     </section>
 
   </div>
 
-  <script src="script.js"></script>
-    <!-- Footer -->
   <footer>
-  <p>Crafted by Tushar Badhawan | © 2025</p>
+    <p>Crafted by Tushar Badhawan | © 2025</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

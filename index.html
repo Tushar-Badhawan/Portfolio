@@ -10,11 +10,13 @@
   <title>Tushar Badhawan | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
+  <div id="particles-js"></div>
+
   <div class="main-content">
-    <!-- Navbar -->
     <nav>
       <ul>
         <li><a href="#profile">Profile</a></li>
@@ -23,7 +25,6 @@
       </ul>
     </nav>
 
-    <!-- Landing Page -->
     <section class="landing">
       <div class="photo-placeholder">
         <img src="Me.png" alt="Tushar Badhawan's Photo" />
@@ -33,28 +34,24 @@
         solutions, driven by curiosity and the joy of learning new technology. Here's more about me. ↓</p>
     </section>
 
-    <!-- Profile Section -->
-    <section class="container" id="profile">
+    <section class="container profile-bg" id="profile">
       <h2>Curious to know more about me?</h2>
       <p class="highlight">Check out my profile sheet for insights into my skills and projects.</p>
       <button onclick="location.href='profile.html'">Profile</button>
     </section>
 
-    <!-- Movie Review Section -->
-    <section class="container" id="movie">
+    <section class="container movie-bg" id="movie">
       <h2>Movie Review</h2>
       <p class="highlight">Check out my movie review to dive into my analysis and thoughts on the film.</p>
       <button onclick="location.href='movie.html'">My Review</button>
     </section>
 
-    <!-- Learning Section -->
-    <section class="container" id="learning">
+    <section class="container learn-bg" id="learning">
       <h2>My Learning Journey</h2>
       <p class="highlight">My learnings from the lectures have helped and guided me in developing essential soft skills.</p>
       <button onclick="location.href='learning.html'">Learnings</button>
     </section>
 
-    <!-- Connect Section -->
     <section class="container" id="connect">
       <h2>Connect with Me</h2>
       <div class="connect-grid">
@@ -74,7 +71,6 @@
         </div>
       </div>
     </section>
-
   </div>
 
   <footer>
@@ -82,6 +78,11 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function () {
+      console.log('Particles.js config loaded');
+    });
+  </script>
 </body>
 
 </html>

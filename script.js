@@ -43,7 +43,7 @@ const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-  
+
   if (currentScroll > lastScrollTop) {
     nav.style.top = "-80px"; // hide
   } else {
@@ -52,3 +52,50 @@ window.addEventListener('scroll', () => {
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
+
+// Initialize particles.js background for landing section
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    color: { value: "#00ffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#00ffff",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 3,
+      direction: "none",
+      out_mode: "bounce",
+    }
+  },
+  interactivity: {
+    events: { onhover: { enable: true, mode: "repulse" } },
+    modes: { repulse: { distance: 100 } }
+  },
+  retina_detect: true,
+});
+
+// Typewriter effect for intro text
+const introElement = document.querySelector('.intro-text');
+const fullText = `A passionate Computer Science engineer focused on learning, gaining skills, and developing solutions, driven by curiosity and the joy of learning new technology. Here's more about me. ↓`;
+
+let index = 0;
+
+function typeWriter() {
+  if (index < fullText.length) {
+    introElement.textContent += fullText.charAt(index);
+    index++;
+    setTimeout(typeWriter, 35);
+  }
+}
+
+// Clear existing content and start typing effect
+introElement.textContent = '';
+typeWriter();
